@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F74103B3-5B08-4DB3-B4EA-637750055428}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ultra_Pass</RootNamespace>
+    <AssemblyName>Ultra Pass</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Badrk\Desktop\New folder %285%29\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>77A8BC4384CA5C4A37A57F0C5A3F68703D0DB0E3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Ultra Pass_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB_A6ADE6_badr1999DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_A6ADE6_badr1999DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgot password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgot password.Designer.cs">
+      <DependentUpon>forgot password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgot password.resx">
+      <DependentUpon>forgot password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DB_A6ADE6_badr1999DataSet.xsc">
+      <DependentUpon>DB_A6ADE6_badr1999DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_A6ADE6_badr1999DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_A6ADE6_badr1999DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_A6ADE6_badr1999DataSet.xss">
+      <DependentUpon>DB_A6ADE6_badr1999DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Ultra Pass_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIGN IN back image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailbox_icon_60078_74274.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chech mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brown mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check finel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\non check finel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minim1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back333.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back 44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye gry1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backrownd desieng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backround of creat account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back22 creat account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back crate account f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\non.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\non2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\non3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update-throbber-icon-in-Seven-theme-2775725-Drupalorg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-455.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error 23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error btn non thing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\done button non.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgot back.png" />
+    <None Include="Resources\Forgot password back desinge.png" />
+    <None Include="Resources\good1.png" />
+    <None Include="Resources\good.png" />
+    <None Include="Resources\Goodpass.png" />
+    <None Include="Resources\weakpass1.png" />
+    <None Include="Resources\weakpass.png" />
+    <None Include="Resources\weak password.png" />
+    <None Include="Resources\Great password.png" />
+    <None Include="Resources\Good password.png" />
+    <None Include="Resources\text box back test1.png" />
+    <None Include="Resources\text box back test.png" />
+    <None Include="Resources\button Done Green Click.png" />
+    <None Include="Resources\button Done Green in.png" />
+    <None Include="Resources\button Done Green.png" />
+    <None Include="Resources\back text box test.png" />
+    <None Include="Resources\Create account Backrownd f.png" />
+    <None Include="Resources\back creat acc.png" />
+    <Content Include="Resources\Done btn approtch.png" />
+    <None Include="Resources\Happy Full.png" />
+    <None Include="Resources\Done btn click1.png" />
+    <None Include="Resources\Done btn approtch1.png" />
+    <Content Include="Resources\Done btn click.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
